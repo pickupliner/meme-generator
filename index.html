@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>who tf said it?</title>
+</head>
+<body style= "background-color: #262830">
+
+<style>
+@font-face {
+  font-family: 'Standard Galactic Alphabet Regular';
+  src: url('https://www.fontsaddict.com/fontface/standard-galactic-alphabet-regular.ttf');
+}
+    body{
+    text-align: center;
+    }
+    .button {
+    background-color: Transparent;
+    background-repeat:no-repeat;
+    border: none;
+    cursor:pointer;
+    overflow: hidden;
+    color: #49f4ff;
+
+    font-size:100px;
+}
+    .name{
+    font-size: 50px
+
+
+
+}
+
+
+</style>
+<button class="button"  onclick="clickk()" id="huh">click me lol</button>
+<h1 id="duo" style="color: #49f4ff;" ></h1>
+<p class="name" style="color: #ff0000;"  id="uhu"></p>
+<script>
+
+
+function hm(min, max){
+   return Math.floor(((max+1-min)*Math.random())+min);
+}
+
+dic={"Leeuw = geit (pokemon)":"-Sam",
+" i’m going to milk myself":"-sam",
+"Duif = kip (fall guys)":"-sam",
+"I’m gonna give him my meat":"-Sam",
+"“diaree is wel sexy”":"-Ben",
+"“Celle is submissive and breedable”":"-Maxim",
+"“Ge steekt geen groenten in de frietpot, barbaren”":"-Merel",
+"“Ni alles moe domme reels zijn :)  Soms gooien we er wat love en appreciation tusse :D”":"-Merel",
+"Fuck negers":"-Ninyann",
+"duo":"duo",
+"Live life to the fullest, get raped":"-Kyan Van Uffelen",
+"word spreads fast, bullets  even faster":"-Kyan Van Uffelen",
+"duo":"duo",
+"Eroderen is kei grappig":"-Kyan",
+"Uit mijn ervaring met kinderen kunt ge ze het beste ophangen":"-Sam Hemati",
+"Do everyone a favor ,kill yourself":"-Sam",
+"“Geniet van het Leven”":"-huisman",
+"Be vodka redbull doede 50/50":"-celle",
+"Live to fuck, fuck to live":"-celle",
+"MTD":"-Ben",
+"Tuurlijk ben ik een politieker, ik ben Koen Wouters.":"-Sam Hemati",
+"Hebt gy enig idee hoe sterk da is (vagene)":"Kyan Van Uffelen",
+"… “Ja ma da zijn vrouwen”":"Sam",
+"“ ligt Monacco ni in Istanbull?”":"Celle Huygen",
+"Knuffel = anaal nemen":"Kyan Van Uffelen",
+"Ik heb bekan Ben vermoord me nature en rng (snake)":"-Celle",
+"For the love of God, Celle stop me roteren!":"-Sam Hemati",
+"Das een dikke dix":"-Ben D.",
+"Deez nuts":"-Celle ( een seconde later)",
+"duo":"duo",
+"Kyan, kijk mijn mommy milkers":"-Celle",
+"Ze is een prettig klein patatje":"-Sam VDH",
+"Ik ben niet echt zo een vingerspeler":"-Arthur",
+"Een mongool in mongolie is gewoon een inwoner":"-mandy",
+"Celle is nicer to moan than kyan":"-Scottish E-girl",
+"Ik heb heel vorige week met kleine kindjes gespeeld":"-sam hemati",
+"Behind every rainbow is a gay":"-Celle",
+"duo":"duo",
+"Waarom schoenen aandoen als je geen sleffers hebt":"-Kyan vu",
+"Als Celle Gru is dan ben ik 1 van zijn minions":"-Sam hemati ",
+"Ik was rondjes aan het spinnen richting de wc met kinderen":"-Sam hemato",
+"I can be gay if nesesarry":"-sam gaymati",
+"Als gy niks doet met uw leven dan moet ge ook geen taxes betalen":"-Kyan vu",
+"If beer is involved my brain is enabled":"-Celle",
+"Get fucked dees is mn favoriete kleur":"-Kyan",
+"The fatter the guy the harder he is":"-Kyan",
+"duo":"duo",
+"Ik ben vegan buiten als ik honger heb":"-Sam Hemati",
+"Ik heb gisteren ook kleine kinderen liggen aanraken, ze vonden het zelfs leuk":"-Ben dealemans",
+"En dan? gy hebt benen, ikke ni":"-Maxim spaas",
+"kyan van uffelen en celle huygen. jullie zijn beide pompoen kinderen en zijn zo scheef dat zelfs het kind van stalin en paulus de derde jullie kan verslagen, in armworstelen met de kleinste teen van zijn bestaan. ":"-Siri (monopoly)",
+"Suicide is kei grappig ":"-Celle",
+"Vrouwen zijn het zwakke geslacht":"-Merel",
+"卐":"-Ninyann",
+"Ik vind uw cock wel het proberen waard":"-Sam hesussy",
+"de meir? Das toch een rivier!":"-Celle",
+"Ik ben technisch gezien ook een vogel,  dok uw eten":"-Merel",
+"Be the wind, like the water under the sea":"-Celle",
+"Ik ben juist geen Stalin":"-Maxim Spaas",
+"maar mannen doen is mijn favoriete hobby": "-Ninyann",
+"Work hard,fail harder":"-Kyan",
+"Streve is gwn sweatte vo school ":"-Sam hemati",
+"Als god een itilaan is ,ben ik morge dood":"-Kyan Van Uffelen",
+"Ik voel mij naakt":"-wouter VH",
+"Kyan pakt zijn prooi al na 12":"-Ben",
+"tijd zat":"-Kyan",
+"Ik haat egels":"-Ben V",
+"Blijf uit mijn gat":"-ato ",
+"Bent gy wakker? Anders pakt de Sint u in de kakker":"-Ninyann ofc",
+"Celle zn stok is superior":"-ato",
+"If life is a game ,im definitely not winning":"-Sam Hemati",
+
+"Ook al is ze 9 spreid haar benen":"-Lode",
+"You wanne be chicken legs? Pok pok":"-Sam hemati",
+"Bro ik ben er":"-Nancy",
+"Is ze maar 7 dan zal mijn bed vanavond beven": "-Ninyann",
+"das wenen en vodka drinke":"-random guy in UGent gang",
+"Hakkie tsjakkie weg is zakkie":"-Ninyann",
+"Ik zou een zwangere vrouw melken":"Maxim",
+"Midnight snacks gelden dus ook voor woefjes":"-Emelie",
+"Gas loopt van mij weg":"-Emelie",
+"Waarom tf zijt gy een avocado":"-Ben D ",
+"Kyan waar is uw hol? ik wil in uw hol":"-sam hemati",
+"Ik ben woman":"-maxim",
+"Sam wilt gy is naar mijn klok kijken?":"-Kyan ",
+"Ah mijn paal staat gewoon verkeerd":"-Ben D"
+
+
+
+
+
+
+
+
+};
+lst=["Ik ben een vierkant", "IK HEB EEN SNAKE :D","Goeie coocking skills?","Kben homofobisch","Ottertjes zijn schattig."];
+dic2={"Ik ben een vierkant":"wil je mijn diagonaal zijn?", "IK HEB EEN SNAKE :D":"Das een rups dumbass","Goeie coocking skills?":"About as high as my IQ","Kben homofobisch":"Aren’t we all?","Ottertjes zijn schattig.":"SMASH"};
+dic3={"Ik ben een vierkant":"-Kyan & -Sam", "IK HEB EEN SNAKE :D":"-kyan &-sam","Goeie coocking skills?":"-Merel & -Kyan","Kben homofobisch":"-Sam & -Kyan","Ottertjes zijn schattig.":"-Ninyann & -Wouter" };
+key=Object.keys(dic)[hm(0,Object.keys(dic).length-1)];
+name=dic[key]+" 2022";
+document.getElementById("huh").innerHTML=key;
+if (key=="duo"){
+keyy=lst[hm(0,lst.length-1)]
+document.getElementById("huh").innerHTML=keyy;
+document.getElementById("duo").innerHTML=dic2[keyy];
+name=dic3[keyy]+"2022";
+}
+
+
+function clickk(e){
+
+
+document.getElementById("uhu").innerHTML=name;
+
+}
+
+</script>
+</body>
+</html>
